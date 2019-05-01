@@ -24,7 +24,7 @@ hs_err_pid*
 .gitattributes
 .git
 .gradle
-.idea
+.idea/
 /oop_robots
 /gradlew.bat
 /gradlew
