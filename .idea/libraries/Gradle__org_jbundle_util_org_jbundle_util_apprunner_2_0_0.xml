@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jbundle.util:org.jbundle.util.apprunner:2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbundle.util/org.jbundle.util.apprunner/2.0.0/9f9cc99b875d73fd104d40dac3b680cd65a4a422/org.jbundle.util.apprunner-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbundle.util/org.jbundle.util.apprunner/2.0.0/19cb3c0bf75bcf73213cceb8090b3caa105ad9ad/org.jbundle.util.apprunner-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
