@@ -81,6 +81,14 @@ task fatJar(type: Jar) {
     with jar
 }
 
+jar{
+   baseName = 'robots'
+   version = '1.2.1'
+   manifest {
+       attributes 'Main-Class': 'gui.RobotsProgram' 
+   }
+}
+
 
 sourceSets {
     main {
