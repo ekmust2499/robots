@@ -28,8 +28,9 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenLocal()
     maven {
-       url "http://localhost:8081/nexus/content/groups/public"
+       url "http://localhost:8081/repository/my/"
     }
 }
 
@@ -55,16 +56,18 @@ dependencies {
 }
 
 uploadArchives {
-   repositories {
-       mavenDeployer {
-             repository(url: "http://localhost:8081/nexus/content/repositories/snapshots") {
- authentication(userName: "admin", password: "admin123")
-}
-
-             pom.artifactId = "simple-project"
-             pom.groupId = "com.example"
-}
-}
+  repositories {
+    mavenDeployer {
+      repository(
+        url: "http://localhost:8081/repository/my/") {
+          authentication(userName: "admin" , password: "admin123")
+      }
+      snapshotRepository(
+        url: "http://localhost:8081/repository/my/") {
+          authentication(userName: "admin", password: "admin123")
+      }
+    }
+  }
 }
 
 task fatJar(type: Jar) {
