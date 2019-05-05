@@ -46,11 +46,6 @@ dependencies {
     
     testCompile "junit:junit:4.12"
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.1.0'
-    compile "org.jbundle.util:org.jbundle.util.jbackup:2.0.0"
-    compile "net.sf.webtestfixtures:webtestfixtures:2.0.1.3"
-    compile "org.shoal:shoal-gms-api:1.5.8"
-    compile "org.ow2.util:util-i18n:1.0.22"
-    compile "com.sun.grizzly:grizzly-lzma:1.9.19-beta5"
 }
 
 uploadArchives {
