@@ -79,7 +79,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\robots-1.2.1.jar;%APP_HOME%\lib\tools.jar
+set CLASSPATH=%APP_HOME%\lib\robots-1.2.1.jar;%APP_HOME%\lib\tools.jar;%APP_HOME%\lib\util-i18n-1.0.22.jar
 
 @rem Execute robots
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ROBOTS_OPTS%  -classpath "%CLASSPATH%" gui.RobotsProgram %CMD_LINE_ARGS%

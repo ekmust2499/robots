@@ -26,7 +26,10 @@ group = 'org.sonatype.nexus.examples'
 
 repositories {
     // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
+    // ≈сли использовать nexus, то следующие 2 строки удал€ть!
+    jcenter()
+    mavenLocal()
+
     maven {
       url "${nexusUrl}/repository/maven-public"
     }
@@ -44,6 +47,7 @@ dependencies {
     
     testCompile "junit:junit:4.12"
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    compile "org.ow2.util:util-i18n:1.0.22"
 }
 
 uploadArchives {
